@@ -48,7 +48,7 @@ function App() {
         <>
           <Button 
             handleAction={fetchPosts}
-            text="FETCH POSTS"
+            text="FETCH POSTS"git
           />
         </>
       ) : (
