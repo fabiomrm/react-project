@@ -4,11 +4,12 @@ const Button = (props) => {
     return (
         <>
             <button
-                onClick={props.handleAction}
+                onClick={props.onClick}
+                
             >{props.text}
             </button>
         </>
     )
 }
 
-export default Button
+export default Button;

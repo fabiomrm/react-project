@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import "./App.css";
 import "./index.css";
 
@@ -47,8 +47,8 @@ function App() {
       {!allPosts ? (
         <>
           <Button 
-            handleAction={fetchPosts}
-            text="FETCH POSTS"git
+            onClick={fetchPosts}
+            text="FETCH POSTS"
           />
         </>
       ) : (
@@ -62,7 +62,7 @@ function App() {
 
           {!searchValue && (
             <Button 
-              handleAction={loadMorePosts}
+              onClick={loadMorePosts}
               text="MAIS 02 POSTS"
             />
           )}
